@@ -1,0 +1,182 @@
+* {
+    --primary-bg-color: #111619;
+    --secondary-bg-color: #1C2124;
+    --primary-font-color: #ffffff;
+    --accent-color: #ff6600;
+    --gray-color: #2a2f32;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-font-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Cabeçalho */
+#header {
+    background-color: var(--primary-bg-color);
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+#logo-image {
+    max-height: 80px;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+/* Imagens */
+.imagem-central {
+    display: block;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px;
+}
+
+thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+/* Cardápio */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 20px auto;
+}
+
+ul li {
+    background-color: var(--gray-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 6px solid var(--accent-color);
+    border-radius: 6px;
+    font-size: 1.1em;
+}
+
+/* Formulário */
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+}
+
+form button {
+    background-color: var(--accent-color);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #e65c00;
+}
+
+/* Títulos e textos */
+h1 {
+    margin-left: 30px;
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+section p {
+    margin-left: 30px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-bg-color);
+    color: #aaa;
+    margin-top: 30px;
+}
+textarea {
+    resize: none; /* impede que o usuário altere o tamanho */
+    height: 120px; /* define uma altura consistente */
+}
+.form-titulo {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
